@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <h1>Formulario carga de datos</h1>
+    <form action="" method="get">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" required>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required> <br>
+
+        <label for="dni">Nro DNI</label>
+        <input type="number" id="dni" required>
+        <label for="fecha_nacimiento">Fecha Nacimiento</label>
+        <input type="date" id="fecha_nacimiento" required><br>
+
+        <label for="domicilio">Domicilio</label>
+        <input type="text" id="domicilio" required>
+        <label for="localidad">Localidad</label>
+        <input type="text" id="localidad" required><br> 
+
+        <h5><b>Idiomas que conoces:</b></h5>
+        <input type="checkbox" name="idioma" id="box1" value="español">
+          <label for="idioma">Español</label><br>
+        <input type="checkbox" name="idioma" id="box2" value="ingles">
+          <label for="idioma">Ingles</label><br>
+        <input type="checkbox" name="idioma" id="box3" value="frances">
+          <label for="idioma">Frances</label><br>
+        <input type="checkbox" name="idioma" id="box4" value="chino">
+          <label for="idioma">Chino</label><br>
+
+          <h5><b>Nivel de conocimiento</b></h5>
+          <input type="range"><br>
+          <input type="range"><br>
+          <input type="range"><br>
+        <button type="submit" onclick="mostrar_datos()">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
